@@ -11,7 +11,7 @@ for dictionary in question_data:
 
 player_game = QuizBrain(question_list)
 
-for i in range(len(question_list)):
+while player_game.still_has_questions():
     player_game.next_question()
 
 print(f'Your score is {player_game.player_score}.')
