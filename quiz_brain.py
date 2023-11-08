@@ -18,7 +18,7 @@ class QuizBrain():
         self.question_number += 1
         user_input = input(f'Q.{self.question_number}: ' + random_pick.question + ' True\False\n')
         if user_input == random_pick.answer:
-            print("You've got it right!.")
+            print(f"You've got it right!. Your point is: {self.player_score} \ {len(self.question_list)}")
             self.player_score += 1
         else:
-            print("The answer is not correct. No worries!")
+            print(f"The answer is not correct. No worries! Your point is: {self.player_score} \ {len(self.question_list)}")
