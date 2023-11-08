@@ -16,7 +16,7 @@ class QuizBrain():
     def next_question(self):
         random_pick = self.question_list[self.question_number]
         self.question_number += 1
-        user_input = input(f'Q.{self.question_number}: ' + random_pick.question + ' True\False\n')
+        user_input = input(f'\nQ.{self.question_number}: ' + random_pick.question + ' True\False\n')
         self.user_answer(random_pick, user_input)
 
     def user_answer(self, random_pick, user_input):

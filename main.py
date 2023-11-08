@@ -14,5 +14,5 @@ player_game = QuizBrain(question_list)
 while player_game.still_has_questions():
     player_game.next_question()
 
-print(f'Your score is {player_game.player_score}.')
-print('Game over.')
+print(f"\nYou've gone through all the questions. Your score is {player_game.player_score} \ {player_game.question_number}.")
+print('Game Over.\n')
