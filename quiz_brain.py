@@ -22,6 +22,6 @@ class QuizBrain():
     def user_answer(self, random_pick, user_input):
         if user_input.lower() == random_pick.answer.lower():
             self.player_score += 1
-            print(f"You've got it right!. Your point is: {self.player_score} \ {self.question_number}")            
+            print(f"You've got it right!. Your current point is: {self.player_score} \ {self.question_number}")            
         else:
-            print(f"The answer is not correct. No worries! Your point is: {self.player_score} \ {self.question_number}")
+            print(f"The answer is not correct. No worries! Your current point is: {self.player_score} \ {self.question_number}")
